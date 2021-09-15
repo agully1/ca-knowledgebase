@@ -3,6 +3,10 @@
 
 format: jb-book
 root: intro
+
 chapters:
-- file: markdown
-- file: notebooks
+- file: who-we-are
+- file: code-of-conduct
+- file: aims
+- file: contribution-guide
+- file: contact-us
