@@ -1,2 +1,0 @@
-# Aims and principles
-blah

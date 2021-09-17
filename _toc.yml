@@ -3,10 +3,42 @@
 
 format: jb-book
 root: intro
+parts:
+- caption: 
+  chapters:
+  - file: about/get-started
+  - file: about/code-of-conduct
+  - file: about/aims
+  - file: about/contribution-guide
+  - file: about/who-we-are
 
-chapters:
-- file: who-we-are
-- file: code-of-conduct
-- file: aims
-- file: contribution-guide
-- file: contact-us
+- caption: Choosing a method
+  chapters:
+  - file: choose/choose-method
+    sections:
+    - file: choose/problem-types
+    - file: choose/structured-unstructured
+  
+- caption: FDTD
+  chapters:
+  - file: fdtd/tutorials
+  
+- caption: FEM
+  chapters:
+  - file: fem/tutorials
+  
+- caption: BEM
+  chapters:
+  - file: bem/tutorials
+  
+- caption: Other
+  chapters:
+  - file: other/tutorials
+  
+- caption: Data
+  chapters:
+  - file: data/data
+  
+- caption: Community
+  chapters:
+  - file: community/community 

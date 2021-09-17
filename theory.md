@@ -1,2 +1,0 @@
-# Theory
-Text to follow
