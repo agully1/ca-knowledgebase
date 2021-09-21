@@ -4,12 +4,12 @@ Welcome to the UKAN Computational Acoustics Knowledgebase: a home for the comput
 
 How to use this site:
 
-- New here? Read our {doc}`about/get-started` guide.
-- Trying to decide on an appropriate computational acoustics method to use for your problem? Read our guide on {doc}`choose/choose-method`.
-- Want to suggest changes or contribute to the knowledgebase? Read our {doc}`about/contribution-guide`.
+- New here? Read our [getting started guide](about/get-started).
+- Trying to decide on an appropriate computational acoustics method to use for your problem? Check out our [flowchart for choosing a method](choose/flowchart).
+- Want to suggest changes or contribute to the knowledgebase? Read our [guide for contributors](about/contribution-guide).
 
 :::{note}
-By using this site you agree to be bound by our {doc}`about/code-of-conduct`.
+By using this site you agree to be bound by our [code of conduct](about/code-of-conduct).
 :::
 
 ```{admonition} More content to follow!

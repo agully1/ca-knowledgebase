@@ -1,3 +1,3 @@
-# Choosing a method
+# Things to consider
 
 Text to follow

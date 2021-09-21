@@ -5,7 +5,7 @@
 We are always seeking contributions and testers for all sections of the site. See our [list of open issues](https://github.com/agully1/ca-knowledgebase/issues) for places where contributions are required, or suggest your own.
 
 :::{note}
-You must have a [GitHub](https://github.com/) account to make suggestions or contributions. Create one [here](https://github.com/signup).
+You must have a [GitHub](https://github.com/) account to make suggestions or contributions. Create one [here](https://github.com/signup). You can find a simple tutorial on using basic GitHub functionality [here](https://guides.github.com/activities/hello-world/).
 :::
 
 ## Making suggestions
@@ -33,7 +33,7 @@ The site has maintainers who review issues and pull requests or encourage others
 If making changes via pull requests, only changes to markdown (`.md`) and Jupyter notebook (`.ipynb`) files will be accepted. Do not make edits to HTML content as this will be automatically overwritten whenever the book is edited and rebuilt. 
 ```
 
-By contributing, you agree that we may redistribute your work under our license. In exchange, we will address your issues and/or assess your change proposal as promptly as we can, and help you become a member of our community. Everyone involved in the Computational Acoustics Knowledgebase agrees to abide by our {doc}`code-of-conduct`.
+By contributing, you agree that we may redistribute your work under our license. In exchange, we will address your issues and/or assess your change proposal as promptly as we can, and help you become a member of our community. Everyone involved in the Computational Acoustics Knowledgebase agrees to abide by our [code of conduct](code-of-conduct).
 
 ## For maintainers
 
@@ -46,7 +46,7 @@ pip install -U jupyter-book
 pip install ghp-import
 ```
 
-In order to build the book, create your own fork of the ca-knowledgebase repository. Then clone this repository to a local repository on your machine:
+In order to build the book, create your own fork of the ca-knowledgebase repository. Then clone this repository to a local repository on your machine (N.B. if you are new to git on the command line, consider completing the [Software Carpentry lesson on version control with git](https://swcarpentry.github.io/git-novice/)):
 
 ```
 cd myreponame

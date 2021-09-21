@@ -20,6 +20,7 @@ parts:
     - file: choose/structured-unstructured
     - file: choose/boundary
     - file: choose/expense
+  - file: choose/flowchart
   
 - caption: FDTD
   chapters:
@@ -35,7 +36,7 @@ parts:
   
 - caption: Other
   chapters:
-  - file: other/tutorials
+  - file: other/other
   
 - caption: Data
   chapters:
@@ -44,3 +45,9 @@ parts:
 - caption: Community
   chapters:
   - file: community/community 
+  
+- caption: Reference
+  chapters:
+  - file: reference/glossary
+  - file: reference/coding
+  - file: reference/resources
