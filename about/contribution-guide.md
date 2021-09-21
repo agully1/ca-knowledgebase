@@ -29,8 +29,10 @@ If you choose to contribute, you may want to look at [How to Contribute to an Op
 	
 The site has maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the knowledgebase.
 
+The majority of this guide is written in markdown (`.md`) and Jupyter notebook (`.ipynb`) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their [MyST cheatsheet](https://jupyterbook.org/reference/cheatsheet.html) for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books [guide on writing executable content](https://jupyterbook.org/content/executable/index.html) for more information about notebooks.
+
 ```{warning}
-If making changes via pull requests, only changes to markdown (`.md`) and Jupyter notebook (`.ipynb`) files will be accepted. Do not make edits to HTML content as this will be automatically overwritten whenever the book is edited and rebuilt. 
+If making changes via pull requests, only changes to markdown (`.md`) and Jupyter notebook (`.ipynb`) files will be accepted. Do not make edits to HTML content, or any other content in the `_build` folder or in the `gh-pages` branch, as these are automatically overwritten whenever the book is edited and rebuilt. 
 ```
 
 By contributing, you agree that we may redistribute your work under our license. In exchange, we will address your issues and/or assess your change proposal as promptly as we can, and help you become a member of our community. Everyone involved in the Computational Acoustics Knowledgebase agrees to abide by our [code of conduct](code-of-conduct).
