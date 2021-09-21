@@ -11,7 +11,6 @@ parts:
   - file: about/aims
   - file: about/contribution-guide
   - file: about/who-we-are
-  - file: test-notebook
 
 - caption: Choosing a method
   chapters:
