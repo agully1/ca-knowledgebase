@@ -1,3 +1,3 @@
-# Structured vs. Unstructured meshes
+# Structured vs. unstructured meshes
 
 Text to follow

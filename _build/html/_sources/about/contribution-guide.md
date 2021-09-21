@@ -33,7 +33,7 @@ The site has maintainers who review issues and pull requests or encourage others
 If making changes via pull requests, only changes to markdown (`.md`) and Jupyter notebook (`.ipynb`) files will be accepted. Do not make edits to HTML content as this will be automatically overwritten whenever the book is edited and rebuilt. 
 ```
 
-By contributing, you agree that we may redistribute your work under our license. In exchange, we will address your issues and/or assess your change proposal as promptly as we can, and help you become a member of our community. Everyone involved in the Computational Acoustics Knowledgebase agrees to abide by our {doc}`about/code-of-conduct`.
+By contributing, you agree that we may redistribute your work under our license. In exchange, we will address your issues and/or assess your change proposal as promptly as we can, and help you become a member of our community. Everyone involved in the Computational Acoustics Knowledgebase agrees to abide by our {doc}`code-of-conduct`.
 
 ## For maintainers
 
@@ -46,11 +46,11 @@ pip install -U jupyter-book
 pip install ghp-import
 ```
 
-In order to build the book, clone the repository to a local repository on your machine:
+In order to build the book, create your own fork of the ca-knowledgebase repository. Then clone this repository to a local repository on your machine:
 
 ```
 cd myreponame
-git clone https://github.com/agully1/ca-knowledgebase
+git clone https://github.com/<your-username>/ca-knowledgebase
 ```
 
 Then build the Jupyter Book (if you make multiple builds, it is recommended to clean up before each new build):
@@ -60,15 +60,16 @@ jupyter-book clean ca-knowledgebase/
 jupyter-book build ca-knowledgebase/
 ```
 
-Then push the new source files to the online repository:
+You can inspect the created book by opening the local HTML files in `ca-knowledgebase/_build`. Once you're happy with them, push the new source files to the online repository:
 
 ```
+cd ca-knowledgebase
 git add ./*
 git commit -m "add your message here"
 git push
 ```
 
-Finally, publish the build artifact via GitHub Pages using `ghp-import` (see [Jupyter Books documentation](https://jupyterbook.org/start/publish.html) for more details):
+Now create a pull request from your repo to the main repo. Once accepted, the lead maintainer will use `ghp-import` to publish the build artifact via GitHub Pages (see [Jupyter Books documentation](https://jupyterbook.org/start/publish.html) for more details):
 
 ```
 ghp-import -n -p -f _build/html
