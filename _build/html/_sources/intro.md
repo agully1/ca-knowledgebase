@@ -28,3 +28,11 @@ This is a pre-alpha version of the knowledgebase. Once up and running, it will a
 [Contact us](mailto:ukan.ca.knowledgebase@gmail.com) with any questions, suggestions, comments and feedback.
 
 We gratefully acknowledge the support of the UK Acoustics Network (UKAN). Make sure you [visit their site](https://acoustics.ac.uk/) and join the computational acoustics special interest group.
+
+Help us show our current and future funders that this resource is useful by clicking the applause button below (and on every page!)
+
+<div>
+<link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css" />
+<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+<applause-button style="width: 30px; height: 30px;"/>
+</div>

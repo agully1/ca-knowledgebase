@@ -18,6 +18,7 @@ parts:
     sections:
     - file: choose/problem-types
     - file: choose/structured-unstructured
+    - file: choose/bandwidth
     - file: choose/boundary
     - file: choose/expense
   - file: choose/flowchart
