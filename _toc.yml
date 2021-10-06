@@ -26,6 +26,9 @@ parts:
 - caption: FDTD
   chapters:
   - file: fdtd/tutorials
+    # sections:
+    # - file: fdtd/intro2d
+    # etc...
   
 - caption: FEM
   chapters:
