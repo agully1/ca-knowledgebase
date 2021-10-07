@@ -31,6 +31,8 @@ The site has maintainers who review issues and pull requests or encourage others
 
 The majority of this guide is written in markdown (`.md`) and Jupyter notebook (`.ipynb`) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their [MyST cheatsheet](https://jupyterbook.org/reference/cheatsheet.html) for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books [guide on writing executable content](https://jupyterbook.org/content/executable/index.html) for more information about notebooks. The structure of the book is determined by the YAML file `_toc.yml`.
 
+If you are contributing a code tutorial or case study, please use the [tutorial template](code-template) provided.
+
 ```{warning}
 If making changes via pull requests, only changes to markdown (`.md`), Jupyter notebook (`.ipynb`), and YAML (`.yml`) files will be accepted. Do not make edits to HTML content, or any other content in the `_build` folder or in the `gh-pages` branch, as these are automatically overwritten whenever the book is edited and rebuilt. 
 ```

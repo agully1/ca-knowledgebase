@@ -10,6 +10,8 @@ parts:
   - file: about/code-of-conduct
   - file: about/aims
   - file: about/contribution-guide
+    sections:
+    - file: about/code-template
   - file: about/who-we-are
 
 - caption: Choosing a method
@@ -31,21 +33,21 @@ parts:
     # etc...
   - file: fdtd/theory
   - file: fdtd/existing
-  - file: fdtd/casestudies
+  - file: fdtd/case-studies
   
 - caption: FEM
   chapters:
   - file: fem/tutorials
   - file: fem/theory
   - file: fem/existing
-  - file: fem/casestudies
+  - file: fem/case-studies
   
 - caption: BEM
   chapters:
   - file: bem/tutorials
   - file: bem/theory
   - file: bem/existing
-  - file: bem/casestudies
+  - file: bem/case-studies
   
 - caption: Other
   chapters:
