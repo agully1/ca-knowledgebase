@@ -28,9 +28,8 @@ parts:
 - caption: FDTD
   chapters:
   - file: fdtd/tutorials
-    # sections:
-    # - file: fdtd/intro2d
-    # etc...
+    sections:
+    - file: fdtd/tutorial1
   - file: fdtd/theory
   - file: fdtd/existing
   - file: fdtd/case-studies
@@ -38,6 +37,8 @@ parts:
 - caption: FEM
   chapters:
   - file: fem/tutorials
+    sections:
+    - file: fem/tutorial1
   - file: fem/theory
   - file: fem/existing
   - file: fem/case-studies
@@ -45,6 +46,8 @@ parts:
 - caption: BEM
   chapters:
   - file: bem/tutorials
+    sections:
+    - file: bem/tutorial1
   - file: bem/theory
   - file: bem/existing
   - file: bem/case-studies
