@@ -11,7 +11,10 @@ parts:
   - file: about/aims
   - file: about/contribution-guide
     sections:
+    - file: about/contribute-suggest
+    - file: about/contribute-contribute
     - file: about/code-template
+    - file: about/contribute-maintain
   - file: about/who-we-are
 
 - caption: Choosing a method

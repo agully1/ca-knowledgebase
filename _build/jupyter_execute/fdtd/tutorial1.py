@@ -36,7 +36,7 @@ import numpy as np
 # 
 # ## Initial example
 # 
-# The first thing we will do is set up a 2D domain for simulation. We will also provide the material properties (density and bulk modulus) - in this case, we'll use properties for air.
+# The first thing we will do is set up a 2D domain for simulation. We will provide the domain size, as well as the material properties (density and bulk modulus) - in this case, we'll use properties for air. This is a homogeneous simulation: the material properties are the same throughout.
 # 
 
 # In[2]:
