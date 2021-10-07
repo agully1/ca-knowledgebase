@@ -469,8 +469,13 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prequisites">
-   Prequisites
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -515,15 +520,29 @@
 <p class="admonition-title">Warning</p>
 <p>This section is currently under development. Content may not be complete, links may be broken, etc.</p>
 </div>
-<p>In this tutorial, we will use a simple explicit FDTD scheme to simulate wave propagation in two dimensions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can run this code directly in your browser by clicking on the rocket logo at the top of the page, and clicking ‘Binder’. This will open a Jupyter Notebook in a <a class="reference external" href="https://mybinder.org/">Binder</a> environment which is set up to contain everything you need to run the code. <strong>Don’t forget to save a local copy if you make any changes!</strong></p>
 <p>If you are new to using Jupyter Notebooks, <a class="reference external" href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">this guide</a> will help you get started.</p>
 </div>
-<div class="section" id="prequisites">
-<h2>Prequisites<a class="headerlink" href="#prequisites" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <p>None.</p>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In this tutorial, we will use a simple <a class="reference internal" href="../reference/glossary.html"><span class="doc std std-doc">explicit</span></a> finite difference time domain (FDTD) scheme to simulate wave propagation in two dimensions.</p>
+<p>The FDTD scheme breaks a domain down into equally-sized cells. For our simple 2D scheme, we will use square cells. Let us imagine our domain is also square, and 1m x 1m in size. We will discuss how to decide the size of the cells later in this tutorial. For now, all we need to know is that we will split our domain up into multiple cells:</p>
+<p>– image of domain –</p>
+<p>In this example, we will use FDTD to provide an approximate solution to the scalar wave equation:</p>
+<p>– equation –</p>
+<p>A finite difference approximation to this equation can be described as follows (see the theory section for how we got here):</p>
+<p>– fd equation –</p>
+<p>Our aim is to approximate the evolution of the pressure and velocity fields in our domain over some specified duration. As this is a time-domain simulation, we consider the problem one time sample at a time. We will therefore start from some initial state, and follow the relation above to update the pressure and velocity values for each cell at the next time sample, on the basis of their exisiting values.</p>
+<p>One important thing to know about the basic FDTD scheme is that the pressure and velocity fields are <em>staggered</em>, with velocity values exisiting at a location halfway between pressure values. Despite this, it is conventional to refer to the velocity components with the same spatial indeces as the pressure values. See the image below for an explanation.</p>
+<p>– image of a cell —</p>
+<p>Our simulation, therefore, will start at time sample 0 with the pressure field P at t=0. The values in this pressure field will comprise our initial condition. From here, the velocity components in both dimensions are calculated. We then proceed to the next time step and update the pressure field, then the velocity fields, and so on for every time sample in the simulation.</p>
+<p>We obtain the output of the simulation by selecting a receiver location (a single point on the mesh) and saving the pressure value at that mesh location every time sample.</p>
 </div>
 <div class="section" id="setup">
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
@@ -540,7 +559,7 @@
 </div>
 <div class="section" id="initial-example">
 <h2>Initial example<a class="headerlink" href="#initial-example" title="Permalink to this headline">¶</a></h2>
-<p>The first thing we will do is set up a 2D domain for simulation. We will provide the domain size, as well as the material properties (density and bulk modulus) - in this case, we’ll use properties for air. This is a homogeneous simulation: the material properties are the same throughout.</p>
+<p>The first thing we will do is set up a 2D domain for simulation. We will provide the domain size, as well as the material properties (density and bulk modulus) - in this case, we’ll use properties for air. This is a <a class="reference internal" href="../reference/glossary.html"><span class="doc std std-doc">homogeneous</span></a> domain: the material properties are the same throughout.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simple example code</span>

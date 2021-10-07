@@ -7,7 +7,7 @@
 # This section is currently under development. Content may not be complete, links may be broken, etc.
 # ```
 # 
-# Here is some text about what the tutorial will cover.
+# Here is some short about what the tutorial will cover.
 # 
 # _Include this note block at the top of every code page:_
 # 
@@ -17,13 +17,17 @@
 # If you are new to using Jupyter Notebooks, [this guide](https://www.dataquest.io/blog/jupyter-notebook-tutorial/) will help you get started.
 # :::
 # 
-# ## Prequisites
+# ## Prerequisites
 # 
 # _All tutorials should have a prerequisites section; just say "none" if none are required.
 # If the prerequisites exist on the knowledgebase, please include links to them.
 # If the prerequisites do not exisit on the knowledgebase, raise a GitHub Issue to ensure they get added (it's preferable that all prerequisites be available on the knowledgebase, but we will relax this requirement while the site is in alpha)._
 # 
 # None.
+# 
+# ## Introduction
+# 
+# _Explain the tutorial here._
 # 
 # 
 # ## Setup
