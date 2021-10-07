@@ -7,6 +7,8 @@
 # This section is currently under development. Content may not be complete, links may be broken, etc.
 # ```
 # 
+# In this tutorial, we will use a simple explicit FDTD scheme to simulate wave propagation in two dimensions.
+# 
 # :::{note}
 # You can run this code directly in your browser by clicking on the rocket logo at the top of the page, and clicking 'Binder'. This will open a Jupyter Notebook in a [Binder](https://mybinder.org/) environment which is set up to contain everything you need to run the code. **Don't forget to save a local copy if you make any changes!**
 # 
@@ -34,7 +36,8 @@ import numpy as np
 # 
 # ## Initial example
 # 
-# _The aim with all our tutorials is to introduce a basic working example as early as possible, so that new users can see the value right away. You can then introduce more details as you go on. See the [FDTD tutorial](../fdtd/tutorial1) for an example._
+# The first thing we will do is set up a 2D domain for simulation. We will also provide the material properties (density and bulk modulus) - in this case, we'll use properties for air.
+# 
 
 # In[2]:
 
@@ -42,42 +45,60 @@ import numpy as np
 # Simple example code
 
 
-# ## More details
-# 
-# _Once you have introduced the basic example, you can begin to build upon it howevery you like. Try not to make these sections too long._
-# 
-# Here's some more details and code relating to a specific aspect.
-# 
+# The next thing we need to do is decide upon our temporal and spatial step sizes. Here we meet an important consideration for FDTD (and all explicit, time-stepping) simulations: the Courant-Friedrichs-Lewy condition.
 
 # In[3]:
+
+
+# More code
+
+
+# We will now set up arrays to hold velocity and pressure values during the simulation, and define our input signal and input and output (source and reciever) locations.
+
+# In[4]:
+
+
+# More code
+
+
+# We are now ready to perform the simulation by looping through every time step:
+
+# In[5]:
+
+
+# Mode code
+
+
+# Finally, we can plot the output signal, and save it as a wav file so we can hear it:
+
+# In[6]:
+
+
+# More code
+
+
+# 
+# ## Adding boundaries
+# 
+# Add some simple boundaries.
+# 
+
+# In[7]:
 
 
 # And here is some more code
 
 
-# ## Embedding code, images, math...
+# ## Different types of source
 # 
-# There's lots of information about how to embed code, images, etc. into Jupyter Notebooks in the [Jupyter Books documentation](https://jupyterbook.org/file-types/notebooks.html). MyST markdown is used in both the `.md` and `.ipynb` files throughout the Jupyter Book. For more information about MyST markdown, check out [the MyST guide in Jupyter Book](https://jupyterbook.org/content/myst.html), or see [the MyST markdown documentation](https://myst-parser.readthedocs.io/en/latest/).
-# 
-# The most common things you might want to do are embed images, like so:
-# 
-# ![](https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg)
-# 
-# Or $add_{math}$ and
-# 
-# $$
-# math^{blocks}
-# $$
-# 
-# using LaTeX formatting, like so...
-# 
-# $$
-# \begin{aligned}
-# \mbox{mean} la_{tex} \\ \\
-# math blocks
-# \end{aligned}
-# $$
-# 
+# Info
+
+# In[8]:
+
+
+# More code
+
+
 # ## Summary
 # 
 # _Please include a few summary bullets describing the main take-aways from the tutorial._

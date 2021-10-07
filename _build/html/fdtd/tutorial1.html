@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -471,13 +469,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-details">
-   More details
+  <a class="reference internal nav-link" href="#adding-boundaries">
+   Adding boundaries
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#embedding-code-images-math">
-   Embedding code, images, math…
+  <a class="reference internal nav-link" href="#different-types-of-source">
+   Different types of source
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -502,6 +500,7 @@
 <p class="admonition-title">Warning</p>
 <p>This section is currently under development. Content may not be complete, links may be broken, etc.</p>
 </div>
+<p>In this tutorial, we will use a simple explicit FDTD scheme to simulate wave propagation in two dimensions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can run this code directly in your browser by clicking on the rocket logo at the top of the page, and clicking ‘Binder’. This will open a Jupyter Notebook in a <a class="reference external" href="https://mybinder.org/">Binder</a> environment which is set up to contain everything you need to run the code. <strong>Don’t forget to save a local copy if you make any changes!</strong></p>
@@ -526,7 +525,7 @@
 </div>
 <div class="section" id="initial-example">
 <h2>Initial example<a class="headerlink" href="#initial-example" title="Permalink to this headline">¶</a></h2>
-<p><em>The aim with all our tutorials is to introduce a basic working example as early as possible, so that new users can see the value right away. You can then introduce more details as you go on. See the <a class="reference internal" href="#"><span class="doc std std-doc">FDTD tutorial</span></a> for an example.</em></p>
+<p>The first thing we will do is set up a 2D domain for simulation. We will also provide the material properties (density and bulk modulus) - in this case, we’ll use properties for air.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simple example code</span>
@@ -534,11 +533,42 @@
 </div>
 </div>
 </div>
+<p>The next thing we need to do is decide upon our temporal and spatial step sizes. Here we meet an important consideration for FDTD (and all explicit, time-stepping) simulations: the Courant-Friedrichs-Lewy condition.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># More code</span>
+</pre></div>
 </div>
-<div class="section" id="more-details">
-<h2>More details<a class="headerlink" href="#more-details" title="Permalink to this headline">¶</a></h2>
-<p><em>Once you have introduced the basic example, you can begin to build upon it howevery you like. Try not to make these sections too long.</em></p>
-<p>Here’s some more details and code relating to a specific aspect.</p>
+</div>
+</div>
+<p>We will now set up arrays to hold velocity and pressure values during the simulation, and define our input signal and input and output (source and reciever) locations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># More code</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We are now ready to perform the simulation by looping through every time step:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mode code</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, we can plot the output signal, and save it as a wav file so we can hear it:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># More code</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="adding-boundaries">
+<h2>Adding boundaries<a class="headerlink" href="#adding-boundaries" title="Permalink to this headline">¶</a></h2>
+<p>Add some simple boundaries.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># And here is some more code</span>
@@ -547,24 +577,16 @@
 </div>
 </div>
 </div>
-<div class="section" id="embedding-code-images-math">
-<h2>Embedding code, images, math…<a class="headerlink" href="#embedding-code-images-math" title="Permalink to this headline">¶</a></h2>
-<p>There’s lots of information about how to embed code, images, etc. into Jupyter Notebooks in the <a class="reference external" href="https://jupyterbook.org/file-types/notebooks.html">Jupyter Books documentation</a>. MyST markdown is used in both the <code class="docutils literal notranslate"><span class="pre">.md</span></code> and <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files throughout the Jupyter Book. For more information about MyST markdown, check out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>, or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-<p>The most common things you might want to do are embed images, like so:</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>Or <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>using LaTeX formatting, like so…</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
+<div class="section" id="different-types-of-source">
+<h2>Different types of source<a class="headerlink" href="#different-types-of-source" title="Permalink to this headline">¶</a></h2>
+<p>Info</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># More code</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
