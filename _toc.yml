@@ -53,6 +53,10 @@ parts:
   chapters: 
   - file: software/software
   
+- caption: User Code
+  chapters:
+  - file: user/user
+  
 - caption: Data
   chapters:
   - file: data/data
