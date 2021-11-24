@@ -28,36 +28,30 @@ parts:
     - file: choose/expense
   - file: choose/flowchart
   
-- caption: FDTD
+- caption: Tutorials
   chapters:
-  - file: fdtd/tutorials
+  - file: tutorials/fdtd
     sections:
-    - file: fdtd/tutorial1
-  - file: fdtd/theory
-  - file: fdtd/existing
-  - file: fdtd/case-studies
-  
-- caption: FEM
-  chapters:
-  - file: fem/tutorials
+    - file: tutorials/fdtd1
+  - file: tutorials/fem
     sections:
-    - file: fem/tutorial1
-  - file: fem/theory
-  - file: fem/existing
-  - file: fem/case-studies
-  
-- caption: BEM
-  chapters:
-  - file: bem/tutorials
+    - file: tutorials/fem1
+  - file: tutorials/bem
     sections:
-    - file: bem/tutorial1
-  - file: bem/theory
-  - file: bem/existing
-  - file: bem/case-studies
-  
-- caption: Other
+    - file: tutorials/bem1
+  - file: tutorials/other
+    
+- caption: Theory
   chapters:
-  - file: other/other
+  - file: theory/theory
+    sections:
+    - file: theory/fdtd_theory
+    - file: theory/fem_theory
+    - file: theory/bem_theory
+
+- caption: Software solutions
+  chapters: 
+  - file: software/software
   
 - caption: Data
   chapters:
