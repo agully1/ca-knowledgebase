@@ -16,42 +16,18 @@ parts:
     - file: about/code-template
     - file: about/contribute-maintain
   - file: about/who-we-are
-
-- caption: Choosing a method
+  
+- caption: Core Concepts
   chapters:
-  - file: choose/choose-method
-    sections:
-    - file: choose/problem-types
-    - file: choose/structured-unstructured
-    - file: choose/bandwidth
-    - file: choose/boundary
-    - file: choose/expense
-  - file: choose/flowchart
+  - file: core-concepts/core-concepts-main
   
 - caption: Tutorials
   chapters:
-  - file: tutorials/fdtd
-    sections:
-    - file: tutorials/fdtd1
-  - file: tutorials/fem
-    sections:
-    - file: tutorials/fem1
-  - file: tutorials/bem
-    sections:
-    - file: tutorials/bem1
-  - file: tutorials/other
-    
-- caption: Theory
-  chapters:
-  - file: theory/theory
-    sections:
-    - file: theory/fdtd_theory
-    - file: theory/fem_theory
-    - file: theory/bem_theory
+  - file: tutorials/tutorials-main
 
-- caption: Software solutions
+- caption: Software Guides
   chapters: 
-  - file: software/software
+  - file: software/software-main
   
 - caption: User Code
   chapters:
