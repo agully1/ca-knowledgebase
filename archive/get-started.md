@@ -10,15 +10,17 @@ The knowledgebase is for anyone using computational acoustics methods, from begi
 
 ## What does the knowledgebase contain?
 
-There are **three** main types of content on the knowledgebase:
+There are **four** main types of content on the knowledgebase:
 
-- **Tutorials:** these are combinations of python code and explanation that we have developed to explain how different computational acoustics methods work. They are open-source and can be run from your browser. 
+- **Core concepts:** these pages cover the basic concepts required to understand and develop computational acoustics code, with interactive examples.
 
-- **Theory:** these pages cover the background theory necessary for understanding the computational acoustics tutorials.
+- **Tutorials:** these are examples of computational acoustics methods in use, with detailed explanations.
+
+- **Software guides:** these are guides for using common computational acoustics software packages, whether commercial or open source.
 
 - **User-submitted code:** these are existing computational acoustics projects developed by our users. We have some documentation requirements, but these are generally much lower than for our tutorial material. Please note that unlike the rest of the knowledgebase, user-submitted code is *not necessarily open-source*, so please check the individual licenses. User-submitted code is hosted on GitHub, so feedback and improvements can be suggested to the auythors directly using normal GitHub interactions. Please note that user-submitted code will vary considerably in up-to-dateness, size, functionality, and quality of documentation.
 
-We also have some material on existing software solutions (commercial and open-source), data which can be used for simulations and benchmarking, and community features.
+As the knowledgebase grows, we plan to include example data which you can download and use for simulations and benchmarking, as well as a host of community features.
 
 ## Where should I start?
 

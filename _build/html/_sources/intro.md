@@ -4,8 +4,11 @@ Welcome to the UKAN Computational Acoustics Knowledgebase: a home for the comput
 
 How to use this site:
 
-- New here? Read our [getting started guide](about/get-started).
-- Trying to decide on an appropriate computational acoustics method to use for your problem? Check out our [flowchart for choosing a method](choose/flowchart).
+- Use the **core concepts** sections to learn about the underlying concepts that make computational acoustics possible.
+- Use the **tutorials** to explore real computational acoustics code with detailed explanations. 
+- Use the **software guides** for help with common computational acoustics software packages, both commercial and open source.
+- Browse the **user-submitted code** section to explore computational acoustics code submitted by our users.
+- Wherever you see this logo <i class="fas fa-rocket"></i> at the top of the page, you can run that code directly in your browser by launching a Binder environment.
 - Want to suggest changes or contribute to the knowledgebase? Read our [guide for contributors](about/contribution-guide).
 
 :::{note}
@@ -16,9 +19,6 @@ By using this site you agree to be bound by our [code of conduct](about/code-of-
 :class: tip
 This is a pre-alpha version of the knowledgebase. Once up and running, it will also include:
 
-* Tutorials building each of the common CA methods up from scratch in Python
-* Theory sections outlining the underlying theory behind each method
-* Case studies showing each method in use in some real acoustics research and development settings
 * Guides to using common commercial and open-source CA software
 * Example data for testing algorithms
 * Community features
