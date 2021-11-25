@@ -1,4 +1,4 @@
-# Contributing to the site
+# Contributing material to the site
 
 If you choose to contribute, you may want to look at [How to Contribute to an Open Source Project on GitHub](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github). In brief:
 
@@ -13,9 +13,11 @@ If you choose to contribute, you may want to look at [How to Contribute to an Op
 	
 The site has maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the knowledgebase.
 
-The majority of this guide is written in markdown (`.md`) and Jupyter notebook (`.ipynb`) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their [MyST cheatsheet](https://jupyterbook.org/reference/cheatsheet.html) for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books [guide on writing executable content](https://jupyterbook.org/content/executable/index.html) for more information about notebooks. The structure of the book is determined by the YAML file `_toc.yml`.
+The majority of this guide is written in markdown (`.md`) and Jupyter notebook (`.ipynb`) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their [MyST cheatsheet](https://jupyterbook.org/reference/cheatsheet.html) for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books [guide on writing executable content](https://jupyterbook.org/content/executable/index.html) for more information about notebooks. 
 
-If you are contributing a code tutorial or case study, please use the [tutorial template](code-template) provided.
+The structure and configuration of the book are determined by the YAML files `_toc.yml` and `_config.yml`. Don't edit these unless you know what you're doing!
+
+If you are contributing a tutorial, please use the [tutorial template](code-template) provided.
 
 ```{warning}
 If making changes via pull requests, only changes to markdown (`.md`), Jupyter notebook (`.ipynb`), and YAML (`.yml`) files will be accepted. Do not make edits to HTML content, or any other content in the `_build` folder or in the `gh-pages` branch, as these are automatically overwritten whenever the book is edited and rebuilt. 

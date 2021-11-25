@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contributing to the site</title>
+    <title>Contributing material to the site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -115,12 +115,17 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Contributing to the site
+     Contributing material to the site
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="code-template.html">
      Tutorial template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="contribute-user-code.html">
+     Contribute your own computational acoustics code
     </a>
    </li>
    <li class="toctree-l2">
@@ -319,8 +324,8 @@
         
               <div>
                 
-  <div class="section" id="contributing-to-the-site">
-<h1>Contributing to the site<a class="headerlink" href="#contributing-to-the-site" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="contributing-material-to-the-site">
+<h1>Contributing material to the site<a class="headerlink" href="#contributing-material-to-the-site" title="Permalink to this headline">¶</a></h1>
 <p>If you choose to contribute, you may want to look at <a class="reference external" href="https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a>. In brief:</p>
 <ol class="simple">
 <li><p>The published copy of the knowledgebase is in the main branch of the repository (so that GitHub will regenerate it automatically). Please create all branches from that, and merge the main repository’s main branch into your main branch before starting work. Please do not work directly in your main branch, since that will make it difficult for you to work on other contributions.</p></li>
@@ -335,8 +340,9 @@
 </li>
 </ol>
 <p>The site has maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the knowledgebase.</p>
-<p>The majority of this guide is written in markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>) and Jupyter notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their <a class="reference external" href="https://jupyterbook.org/reference/cheatsheet.html">MyST cheatsheet</a> for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books <a class="reference external" href="https://jupyterbook.org/content/executable/index.html">guide on writing executable content</a> for more information about notebooks. The structure of the book is determined by the YAML file <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>.</p>
-<p>If you are contributing a code tutorial or case study, please use the <a class="reference internal" href="code-template.html"><span class="doc std std-doc">tutorial template</span></a> provided.</p>
+<p>The majority of this guide is written in markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>) and Jupyter notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) files. Jupyter Books use MyST which is an extension of basic markdown syntax. See their <a class="reference external" href="https://jupyterbook.org/reference/cheatsheet.html">MyST cheatsheet</a> for information about formatting. Markdown pages do not contain executable content, whereas the notebook files do. See the Jupyter Books <a class="reference external" href="https://jupyterbook.org/content/executable/index.html">guide on writing executable content</a> for more information about notebooks.</p>
+<p>The structure and configuration of the book are determined by the YAML files <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. Don’t edit these unless you know what you’re doing!</p>
+<p>If you are contributing a tutorial, please use the <a class="reference internal" href="code-template.html"><span class="doc std std-doc">tutorial template</span></a> provided.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If making changes via pull requests, only changes to markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), Jupyter notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>), and YAML (<code class="docutils literal notranslate"><span class="pre">.yml</span></code>) files will be accepted. Do not make edits to HTML content, or any other content in the <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder or in the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch, as these are automatically overwritten whenever the book is edited and rebuilt.</p>

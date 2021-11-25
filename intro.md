@@ -2,6 +2,10 @@
 
 Welcome to the UKAN Computational Acoustics Knowledgebase: a home for the computational acoustics research, development and user community in the UK and beyond.
 
+:::{note}
+By using this site you agree to be bound by our [code of conduct](about/code-of-conduct).
+:::
+
 How to use this site:
 
 - Use the **core concepts** sections to learn about the underlying concepts that make computational acoustics possible.
@@ -11,10 +15,6 @@ How to use this site:
 - You can download book pages and code by clicking the download logo ( <i class="fas fa-download"></i> ).
 - Wherever you see the rocket logo ( <i class="fas fa-rocket"></i> ) at the top of the page, you can run that code directly in your browser by clicking on the button and selecting "Binder".
 - Want to suggest changes or contribute to the knowledgebase? Read our [guide for contributors](about/contribution-guide).
-
-:::{note}
-By using this site you agree to be bound by our [code of conduct](about/code-of-conduct).
-:::
 
 ```{admonition} More content to follow!
 :class: tip
