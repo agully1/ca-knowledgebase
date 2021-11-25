@@ -8,7 +8,7 @@ How to use this site:
 - Use the **tutorials** to explore real computational acoustics code with detailed explanations. 
 - Use the **software guides** for help with common computational acoustics software packages, both commercial and open source.
 - Browse the **user-submitted code** section to explore computational acoustics code submitted by our users.
-- Wherever you see this logo <i class="fas fa-rocket"></i> at the top of the page, you can run that code directly in your browser by launching a Binder environment.
+- Wherever you see the rocket logo (<i class="fas fa-rocket"></i>) at the top of the page, you can run that code directly in your browser by clicking on the button and selecting "Binder".
 - Want to suggest changes or contribute to the knowledgebase? Read our [guide for contributors](about/contribution-guide).
 
 :::{note}
@@ -24,6 +24,8 @@ This is a pre-alpha version of the knowledgebase. Once up and running, it will a
 * Community features
 
 ```
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRASVBDDqw7gumQ_Ct4Yy8uGzN4k5za6SiVlisJYrxpqFPgA/viewform?embedded=true" width="800" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 [Contact us](mailto:ukan.ca.knowledgebase@gmail.com) with any questions, suggestions, comments and feedback.
 
