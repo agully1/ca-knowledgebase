@@ -25,6 +25,7 @@ parts:
 - caption: Tutorials
   chapters:
   - file: tutorials/tutorials-main
+  - file: tutorials/quick-BEM
 
 - caption: Software Guides
   chapters: 
