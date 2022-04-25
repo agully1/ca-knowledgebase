@@ -2,3 +2,7 @@ jupyter-book>=0.7.0b
 matplotlib
 numpy
 scipy
+fenics-ffc
+plotly
+tqdm
+
